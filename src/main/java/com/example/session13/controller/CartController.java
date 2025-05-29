@@ -67,7 +67,7 @@ public class CartController {
         if (cookies != null) {
             for (Cookie c : cookies) {
                 if ("productNames".equals(c.getName())) {
-                    String value = c.getValue(); // Ví dụ: "Sữa|Bánh|Kẹo"
+                    String value = c.getValue();
                     String[] split = value.split("\\|");
                     for (String s : split) {
                         if (!s.trim().isEmpty()) names.add(s);
